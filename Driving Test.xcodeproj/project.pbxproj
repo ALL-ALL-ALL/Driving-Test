@@ -11,6 +11,7 @@
 		3B5A84102B965EB90032ADB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A840F2B965EB90032ADB3 /* ContentView.swift */; };
 		3B5A84122B965EBB0032ADB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A84112B965EBB0032ADB3 /* Assets.xcassets */; };
 		3B5A84152B965EBB0032ADB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A84142B965EBB0032ADB3 /* Preview Assets.xcassets */; };
+		3B5C99C62B98BB9F00C588FD /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C99C52B98BB9F00C588FD /* NewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B5A840F2B965EB90032ADB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B5A84112B965EBB0032ADB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5A84142B965EBB0032ADB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B5C99C52B98BB9F00C588FD /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3B5A840D2B965EB90032ADB3 /* Driving_TestApp.swift */,
 				3B5A840F2B965EB90032ADB3 /* ContentView.swift */,
+				3B5C99C52B98BB9F00C588FD /* NewView.swift */,
 				3B5A84112B965EBB0032ADB3 /* Assets.xcassets */,
 				3B5A84132B965EBB0032ADB3 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5C99C62B98BB9F00C588FD /* NewView.swift in Sources */,
 				3B5A84102B965EB90032ADB3 /* ContentView.swift in Sources */,
 				3B5A840E2B965EB90032ADB3 /* Driving_TestApp.swift in Sources */,
 			);
