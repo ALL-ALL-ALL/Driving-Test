@@ -47,7 +47,7 @@ struct ContentView: View {
                 HStack {
                     
                     Button(action: {
-                        
+                        presentSheet = true
                     }, label: {
                         Text("Motorcycle")
                 })
@@ -72,6 +72,8 @@ struct ContentView: View {
                 
                 
             } // FIN ZASTACK
+            .padding(.top,-110)
+
 
             
                 
