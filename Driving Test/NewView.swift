@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct NewView: View {
-    @State private var progress = 0.6
+    @State private var progress = 0.4
 
     var body: some View {
         
         Text("choose your test ")
             .font(.title)
             .bold()
+            .padding(.leading,-130)
         
         
             
@@ -39,6 +40,8 @@ struct NewView: View {
                                 .padding(.top,70)
                         } // ZSTACK
                 })// Boutton fin label
+            .padding(.leading,-80)
+
             
             Button(action: {
                     
@@ -66,6 +69,8 @@ struct NewView: View {
         Text("You Passing Probability:")
             .font(.title)
             .bold()
+            .padding(.leading,-45)
+
         
         
         ZStack {
@@ -85,7 +90,7 @@ struct NewView: View {
                 .cornerRadius(25)
                 .foregroundColor(.blue)
             
-            Text("65 %")
+            Text("35 %")
                 .foregroundStyle(.black)
                 .bold()
                 .font(.title2)
@@ -94,6 +99,8 @@ struct NewView: View {
         
         Text("You passing probality is based on your performance on the app ")
             .italic()
+            .multilineTextAlignment(.center)
+
         
         
         
