@@ -19,9 +19,6 @@ struct ContentView: View {
 
             VStack{
                 
-
-
-                VStack {
                     Text("Driving Test")
                         .foregroundStyle(.white)
                         .font(.title)
@@ -36,112 +33,104 @@ struct ContentView: View {
                                         .padding(-160)
                                         .padding(.leading,-26)
                                         .padding(.top,-60)
-
-
-                    
-                    
-                    
-                }
-
+            } // FIN VSTACK
+            
+            
+            
+            
+            ZStack {
+                Rectangle()
+                    .frame(width: 380, height: 100)
+                    .foregroundColor(.white)
+                    .cornerRadius(50)
                 
-                
-                HStack{
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.white)
-                        Rectangle()
-                            .frame(width:120, height:60)
-                            .foregroundColor(.cyan)
-                            .cornerRadius(30)
+                HStack {
+                    
+                    Button(action: {
                         
-                        Button(action: {
-                            presentSheet = true
-
-                                        }, label: {
-                                            
-                                            
-                                            Text("Motorcycle")
-                                                .foregroundStyle(.black)
-                                            
-                                        })
-                   
-                    } // FIN ZSTACK
-
-                
+                    }, label: {
+                        Text("Motorcycle")
+                })
                     
-                    ZStack{
-                        Rectangle()
-                            .frame(width:120, height:60)
-                            .foregroundColor(.cyan)
-                            .cornerRadius(30)
+                    Button(action: {
                         
-                        Button(action: {
-                                            
-                                        }, label: {
-                                            
-                                            
-                                            Text("car")
-                                                .foregroundStyle(.black)
-                                            
-                                            
-                                        })
-                   
-                    } // FIN ZSTACK
+                    }, label: {
+                        Text("Car")
+                })
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Commercial")
+                })
                     
                     
-                    ZStack{
-                        Rectangle()
-                            .frame(width:120, height:60)
-                            .foregroundColor(.cyan)
-                            .cornerRadius(30)
-                        
-                        Button(action: {
-                                            
-                                        }, label: {
-                                            
-                                            
-                                            Text("Commercial")
-                                                .foregroundStyle(.black)
-                                            
-                                            
-                                        })
-                        
-                    } // FIN ZSTACK
+                    
+                    
+                } // HASATCK
+                
+                
+                
+                
+            } // FIN ZASTACK
 
-                } // HSTACK
+            
+                
+                
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
                 
                 
                 
 
-            } // fin vstack
-            .padding(-110)
+                    
+                    
+                    
+                
 
+                
+                
+          
+                    
+                    
+               
+
+               
+            } // fin Zstack
             .sheet(isPresented: $presentSheet) {
                 NewView()
                 
 
                             .presentationDetents([.medium, .large])
                             .presentationDetents([.fraction(0.5)])
-
-
-
-
         }// FIN SHeET
 
-     } // FIN ZSACK
-        .ignoresSafeArea(.all)
+        
+    } // FIN body
 
+    
         
-
         
-        
-  } // fin body
+} // fin struct
     
     
-} // FIN Struct
 #Preview {
     ContentView()
 }
