@@ -11,7 +11,7 @@ struct NewView: View {
     @State private var progress = 0.4
 
     var body: some View {
-        
+
         Text("choose your test ")
             .font(.title)
             .bold()
@@ -20,6 +20,7 @@ struct NewView: View {
         
             
         HStack {
+
             Button(action: {
                         
                     }, label: {
@@ -41,6 +42,7 @@ struct NewView: View {
                         } // ZSTACK
                 })// Boutton fin label
             .padding(.leading,-80)
+            
 
             
             Button(action: {
@@ -100,11 +102,14 @@ struct NewView: View {
         Text("You passing probality is based on your performance on the app ")
             .italic()
             .multilineTextAlignment(.center)
+        
 
         
         
         
     } // fin  BODY
+
+    
 } // FIN STRUC
 
 #Preview {

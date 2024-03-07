@@ -11,10 +11,16 @@ import UIKit
 struct ContentView: View {
     @State var presentSheet = Bool()
 
+
     var body: some View {
 
         ZStack {
             Color(.black)
+
+            
+            
+
+
                 
 
             VStack{
@@ -37,6 +43,7 @@ struct ContentView: View {
                                         .padding(.top,-120)
 
             } // FIN VSTACK
+            
             
             
             
@@ -103,6 +110,7 @@ struct ContentView: View {
 
 
                     })
+
                 
    
             } // FIN ZASTACK
@@ -114,11 +122,15 @@ struct ContentView: View {
             .sheet(isPresented: $presentSheet) {
                 NewView()
                 
+                
 
                             .presentationDetents([.medium, .large])
                             .presentationDetents([.fraction(0.5)])
+                 
         }// FIN SHeET
+
             .ignoresSafeArea(.all)
+
 
         
     } // FIN body
